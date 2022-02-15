@@ -1,9 +1,6 @@
-import { useEffect, useState } from 'react';
-// import { PageContainer } from '@ant-design/pro-layout';
-import { Reorder } from 'framer-motion';
+import React from 'react';
 import { Card } from 'antd';
 import { HomeOutlined } from '@ant-design/icons';
-import DraggableList from 'react-draggable-lists';
 
 import { Responsive, WidthProvider } from 'react-grid-layout';
 
@@ -12,9 +9,6 @@ import styles from './index.less';
 const ResponsiveReactGridLayout = WidthProvider(Responsive);
 
 const DashboardPage = () => {
-  const [compactType, setCompactType] = useState('vertical');
-  const [currentBreakpoint, setCurrentBreakpoint] = useState('lg');
-
   return (
     <div>
       <div className={styles.title_wrapper}>
